@@ -1,6 +1,6 @@
 # 🌐 SPY-CLI COLLAB API
 
-Welcome to SPY-CLI Collab! This API leverages the power of Google Colab to provide a seamless and efficient way to access our services. Using ngrok, we create a secure tunnel to our Colab-hosted API, ensuring easy and reliable access.
+Welcome to SPY-CLI Collab! This API leverages the power of Google Colab to provide a seamless and efficient way to access [spy-cli](https://github.com/junioralive/spy-cli). Using ngrok, we create a secure tunnel to our Colab-hosted API, ensuring easy and reliable access.
 
 ## 🚀 Getting Started
 
@@ -45,7 +45,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Discord - junioralive
 
-Project Link: [SPY-CLI COLLAB API](https://github.com/yourusername/spy-cli-collab-api)
+Project Link: [SPY-CLI COLLAB API](https://github.com/junioralive/spy-cli-collab-api)
 
 ---
 
