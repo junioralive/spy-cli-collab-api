@@ -21,7 +21,7 @@ Follow these simple steps to get your API up and running with ngrok.
 
 ### Step 2: Keep Colab Alive
 
-To prevent your Colab session from disconnecting, use this handy tool: [Keep Colab Alive](https://mycollab.com).
+To prevent your Colab session from disconnecting, use this handy tool: [Keep Colab Alive](https://gist.github.com/MohamedElashri/409bb26bd681eefcf8af6b532a661859).
 
 ### Step 3: Set up ngrok
 
