@@ -45,7 +45,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Discord - junioralive
 
-Project Link: [https://github.com/yourusername/spy-cli-gc-api](https://github.com/yourusername/spy-cli-gc-api)
+Project Link: [SPY-CLI COLLAB API](https://github.com/yourusername/spy-cli-collab-api)
 
 ---
 
