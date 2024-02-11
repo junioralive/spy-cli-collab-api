@@ -53,7 +53,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## 📩 Contact
 
-Your Name - example@example.com
+Discord - junioralive
 
 Project Link: [https://github.com/yourusername/spy-cli-gc-api](https://github.com/yourusername/spy-cli-gc-api)
 
