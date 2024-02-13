@@ -4,7 +4,7 @@ import re
 import json
 import asyncio
 from playwright.async_api import async_playwright
-from flask_ngrok3 import run_with_ngrok
+from flask_ngrok import run_with_ngrok
 
 app = Flask(__name__)
 run_with_ngrok(app)
