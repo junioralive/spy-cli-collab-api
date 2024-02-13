@@ -103,23 +103,38 @@ def preprocess_and_parse(content):
     
 async def scrape(url):
     try:
+        # Start Playwright and open a browser
         playwright = await async_playwright().start()
         browser = await playwright.chromium.launch()
         page = await browser.new_page()
+        
+        # Go to the initial URL
         await page.goto(url)
+        
+        # Wait for the first button to be visible and get its href
         await page.wait_for_selector('a.btn.btn-primary', state='visible')
-        await page.click('a.btn.btn-primary')
+        first_button = await page.query_selector('a.btn.btn-primary')
+        first_href = await first_button.get_attribute('href')
+        
+        # Navigate to the href obtained from the first button
+        await page.goto(first_href)
+        
+        # Wait for the second button to be visible and get its href
         await page.wait_for_selector('a.btn.btn-success.btn-lg.h6', state='visible', timeout=10000)
-        success_button = await page.query_selector('a.btn.btn-success.btn-lg.h6')
-        href = await success_button.get_attribute('href')
+        second_button = await page.query_selector('a.btn.btn-success.btn-lg.h6')
+        second_href = await second_button.get_attribute('href')
+        
+        # Clean up and return the second href
         await browser.close()
         await playwright.stop()
-        return {"success": True, "stream": href}
+        return {"success": True, "stream": second_href}
     except Exception as e:
+        # Ensure resources are cleaned up on error
         if 'browser' in locals():
             await browser.close()
             await playwright.stop()
         return {"success": False, "error": str(e)}
+
 
 # -----------------------------
 # Flask Routes
